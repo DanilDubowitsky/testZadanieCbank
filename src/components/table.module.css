@@ -1,0 +1,38 @@
+.myInput{
+    border: 1px solid dodgerblue;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+.myInput:focus{
+    border: 2px solid dodgerblue;
+    margin: 1rem;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+button{
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 5px;
+    min-width: 200px;
+    min-height: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: dodgerblue;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+}
+button:hover{
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid dodgerblue;
+    border-radius: 20px;
+}
