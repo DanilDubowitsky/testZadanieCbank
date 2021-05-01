@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+
+}
+
+.container div{
+    margin-left: auto;
+    margin-right: auto;
+}

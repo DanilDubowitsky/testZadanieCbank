@@ -16,11 +16,16 @@ const Row = (props)=>{
 
 
     function saveClick(id) {
+        if(nameInput.current.value === "" || descInput.current.value === ""){
+            alert('Поля не должны быть пустыми');
+            return;
+        }
         changedPost = {
             name:nameInput.current.value,
             description:descInput.current.value,
             id:id
         }
+
         props.changePost(changedPost);
     }
     

@@ -1,8 +1,8 @@
 import {ADD_POST, CHANGE_EDITABLE_VALUE, CHANGE_POST, DELETE_POST} from "../constants";
 
 let initialState = {
-    posts: [{name: 'dfggre', description: 'ghhtrhr',editable: false},
-        {name: 'ggrhrthrwd212', description: 'ggegeghhjhhre23', editable: false}
+    posts: [{name: 'Запись1', description: 'Описание записи 1',editable: false},
+        {name: 'Запись 2', description: 'Описание записи 2', editable: false}
     ]
 }
 const postReducer = (state = initialState, action) => {

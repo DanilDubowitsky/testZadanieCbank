@@ -7,29 +7,20 @@ import table from './table.module.css'
 const Table = (props)=>{
     const nameInput = React.createRef();
     const descInput = React.createRef();
-
-
-
     function submitHandler(){
         if(nameInput.current.value === "" || descInput.current.value === ""){
             alert("Поля должны быть заполнены");
             return;
         }
-
         let newPost = {
             name:nameInput.current.value,
             description:descInput.current.value,
             editable:false
         }
-
         props.addPost(newPost);
         nameInput.current.value = "";
         descInput.current.value = "";
-
-
     }
-
-
     return(
         <div>
             <input className={table.myInput} ref={nameInput} type={'text'} placeholder={'Имя'}/>
